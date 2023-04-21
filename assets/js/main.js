@@ -63,6 +63,7 @@
                 $cbs.addClass( '_akmr' );
             }
 
+        
         // ----- [ Cambios en el componente feed ] ---
             var par = $('#r293q1');
             var $ix9f619 = $('#ix9f619'); 
@@ -72,9 +73,7 @@
             var $ixl5mz7h = $('#ixl5mz7h');
             var $ixh8yej3 = $('#ixh8yej3');
             var $ix1cy8zhl = $('#ix1cy8zhl');
-            // borrar
 
-            
             var $ix1n2onr6 = $('#ix1n2onr6');
             var $ix1n2onr6 = $('#ix1n2onr6');
 
@@ -93,25 +92,23 @@
                         $tempix2lah0s = $ix2lah0s.detach();
                         $tempixl5mz7h = $ixl5mz7h.detach();
                     }
-
                     /**
                      * Mover bloque de div.
                      * guardando como copia lo que se borra para despues recuperarlo.
                      */
-                    //$tempixh8yej3divs = $('#ixh8yej3 > div').detach().appendTo($ix1cy8zhl);
-                    //$tempixh8yej3 = $ixh8yej3.detach();
-
+                    
                     if( $temp002 || $temp006 ) {
-                        // ix1n2onr6
-                        // 002 y 006
                         $('#ixh8yej3 > div#002').remove();
+                        $temp002 = $('#ixh8yej3 > div#002').detach();
+                        $temp006 = $('#ixh8yej3 > div#006').detach();
+                        $tempixh8yej3divs = $('#ixh8yej3 > div').detach().appendTo($ix1cy8zhl);
+                        $tempixh8yej3 = $ixh8yej3.detach();
                     } else {
                         $temp002 = $('#ixh8yej3 > div#002').detach();
                         $temp006 = $('#ixh8yej3 > div#006').detach();
                         $tempixh8yej3divs = $('#ixh8yej3 > div').detach().appendTo($ix1cy8zhl);
                         $tempixh8yej3 = $ixh8yej3.detach();
                     }
-                    
                 } 
             } else {
                 if ( par.hasClass("xdt5ytf") ) {
@@ -120,30 +117,34 @@
                     $ixvb8j5.addClass('xvb8j5 x1vjfegm').removeClass('xvbhtw8 xh8yej3'); 
                     $ix1cy8zhl.addClass('x1cy8zhl xdt5ytf x1gvbg2u x1y1aw1k xn6708d xx6bls6 x1ye3gou xvbhtw8 x1xgvd2v').removeClass('xh8yej3 x1q0g3np x1n2onr6 xaw8158 xtuw4uo');
 
-                    /**
+                    /***
                      * Se buelve a agregar los elementos del logo y el elemento final del nav.
                      * Es como la función .append() solo que añade el HTML directamente 
                      * después de la apertura de la etiqueta del elemento seleccionado.
-                     */
+                    ***/
                     $ix1cy8zhl.prepend($tempix2lah0s);
                     $ix1cy8zhl.append($tempixl5mz7h);
                     
-                    /**
+                    /***
                      * Pone el elemento tempix1cy8zhl antes del elemento ixl5mz7h
-                     */
-
+                     ***/
                     var divs = $tempixh8yej3.append($tempixh8yej3divs, $temp002, $temp006);
                     var tempix1cy8zhl = divs.appendTo($ix1cy8zhl);
                     $('#ixl5mz7h').before($(tempix1cy8zhl));
-
                     $('#ixh8yej3 > div#003').before($($temp002));
                     $('#ixh8yej3 > div#007').before($($temp006));
-
-
-
+                    // alfarve - fatima
                 } 
             }
     }
+
+
+
+
+
+
+
+
 
 
 
