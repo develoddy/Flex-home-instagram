@@ -1,9 +1,6 @@
 (function ($) {
-    var $window = $(window),
-        $body = $("body");
-    var $ps = $("._aalv._akmq._akm0"),
-        $cs = $("._aak6._aak9"),
-        $cbs = $("._aam1._akej._akmr");
+    var $window = $(window),$body = $("body");
+    var $ps = $("._aalv._akmq._akm0"),$cs = $("._aak6._aak9"),$cbs = $("._aam1._akej._akmr");
 
     const screen = {
         small: 0,
@@ -79,8 +76,11 @@
         if (nw < 768) {
             if (par.hasClass("x1q0g3np")) {
                 par.addClass("xdt5ytf").removeClass("x1q0g3np");
+
                 $ix9f619.addClass("xg7h5cd xh8yej3 x1vjfegm x1ey2m1c x80663w x1jeouym x6w1myc").removeClass("xeq5yr9 x1dr59a3  x13vifvy x1n327nk");
+
                 $ixvb8j5.addClass("xvbhtw8 xh8yej3").removeClass("xvb8j5 x1vjfegm");
+                
                 $ix1cy8zhl.addClass("xh8yej3 x1q0g3np x1n2onr6 xaw8158 xtuw4uo").removeClass("x1cy8zhl xdt5ytf x1gvbg2u x1y1aw1k xn6708d xx6bls6 x1ye3gou xvbhtw8 x1xgvd2v");
 
                 // Se borra el elemento del logo y el elemento final del nav.
